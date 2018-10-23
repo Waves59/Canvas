@@ -18,6 +18,7 @@ class Particle {
         a += 1 / 60 * 5
         this.x += this.vx + Math.sin(a);
         this.y += this.vy + Math.sin(a) ;
+        
         if (this.y > canvas.height || this.y < 0) {
             this.y = 0;
         }
